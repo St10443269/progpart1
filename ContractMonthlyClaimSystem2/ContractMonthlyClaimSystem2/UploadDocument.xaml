@@ -1,0 +1,24 @@
+﻿<Window x:Class="ContractMonthlyClaimSystem.UploadDocument"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Upload Document" Height="300" Width="500"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock Text="Upload Supporting Document" FontSize="18" FontWeight="Bold" Margin="0 0 0 20"/>
+
+            <Label Content="Document Name:"/>
+            <TextBox Name="txtDocName" Margin="0 0 0 10"/>
+
+            <Label Content="File Type:"/>
+            <ComboBox Name="cmbFileType" Margin="0 0 0 10">
+                <ComboBoxItem Content="PDF"/>
+                <ComboBoxItem Content="Word Document"/>
+                <ComboBoxItem Content="Image"/>
+            </ComboBox>
+
+            <Button Content="Upload" Width="120" HorizontalAlignment="Right" Click="UploadBtn_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

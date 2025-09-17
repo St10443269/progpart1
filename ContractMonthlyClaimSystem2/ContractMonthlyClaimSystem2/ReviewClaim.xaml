@@ -1,0 +1,29 @@
+﻿<Window x:Class="ContractMonthlyClaimSystem.ReviewClaim"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Review Claim" Height="400" Width="500"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock Text="Review Claim" FontSize="18" FontWeight="Bold" Margin="0 0 0 20"/>
+
+            <Label Content="Claim ID:"/>
+            <TextBox Text="12345" IsReadOnly="True" Margin="0 0 0 10"/>
+
+            <Label Content="Lecturer:"/>
+            <TextBox Text="John Doe" IsReadOnly="True" Margin="0 0 0 10"/>
+
+            <Label Content="Hours Worked:"/>
+            <TextBox Text="20" IsReadOnly="True" Margin="0 0 0 10"/>
+
+            <Label Content="Comments:"/>
+            <TextBox Name="txtComments" Height="80" AcceptsReturn="True" Margin="0 0 0 10"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="Approve" Background="LightGreen" Width="100" Margin="5" Click="ApproveBtn_Click"/>
+                <Button Content="Reject" Background="LightCoral" Width="100" Margin="5" Click="RejectBtn_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
